@@ -26,7 +26,7 @@
             android:contentInsetStart="0dp"
             app:contentInsetStart="0dp">
 
-            <com.fungeon.findr.utils.SquareImageView
+            <com.fungeonstudio.diagonline.utils.SquareImageView
                 android:id="@+id/image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

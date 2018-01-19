@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.fungeon.findr">
+    package="com.fungeonstudio.diagonline">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.fungeon.findr.Splash"
+            android:name=".Splash"
             android:theme="@style/Full">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,16 +20,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.fungeon.findr.Main"
+            android:name=".Main"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme" />
-        <activity android:name="com.fungeon.findr.Detail"
+        <activity
+            android:name=".Detail"
             android:theme="@style/Full"
             android:windowSoftInputMode="adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.fungeon.findr.Main"/>
+                android:value="com.fungeonstudio.diagonline.Main" />
         </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

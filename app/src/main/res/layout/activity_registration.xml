@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:orientation="vertical"
+    app:layout_width="match_parent"
+    app:layout_height="match_parent"
+    tools:ignore="NamespaceTypo">
+    <android.support.design.widget.AppBarLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="220dp">
+        <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="60dp" app:layout_marginRight="60dp">
+            <TextView  app:textStyle="bold" app:textColor="@color/colorWhiteTrans" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Register" />
+            <TextView  app:textColor="@color/colorWhiteTrans" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/spacing_medium" app:text="and you can discover best news around the world " />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+
+        <ProgressBar
+            app:id="@+id/signup_progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            app:layout_width="match_parent"
+            app:layout_height="wrap_content"
+            app:indeterminate="true"
+            app:visibility="gone" />
+        <ScrollView app:id="@+id/signup_form" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true">
+            <RelativeLayout app:orientation="vertical" app:id="@+id/email_login_form" app:padding="@dimen/spacing_xlarge" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_centerInParent="true">
+                    <android.support.design.widget.TextInputLayout app:layout_width="match_parent" app:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            app:id="@+id/reg_email"
+                            app:layout_width="match_parent"
+                            app:layout_height="wrap_content"
+                            app:hint="Email"
+                            app:inputType="textEmailAddress"
+                            app:maxLines="1"
+                            app:singleLine="true" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout app:layout_width="match_parent" app:layout_height="wrap_content">
+
+                        <EditText
+                            app:id="@+id/reg_password"
+                            app:layout_width="match_parent"
+                            app:layout_height="wrap_content"
+                            app:hint="Password"
+                            app:inputType="textPassword"
+                            app:maxLines="1"
+                            app:singleLine="true" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.v7.widget.AppCompatCheckBox app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/spacing_middle" app:text="Remember me" />
+
+                    <Button
+                        app:id="@+id/registration_button"
+                        style="@android:style/Widget.Material.Button.Colored"
+                        app:layout_width="match_parent"
+                        app:layout_height="wrap_content"
+                        app:layout_marginTop="@dimen/spacing_xlarge"
+                        app:text="SIGN UP"
+                        app:textColor="@color/colorWhiteTrans" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
