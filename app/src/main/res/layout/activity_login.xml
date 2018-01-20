@@ -7,9 +7,15 @@
     app:layout_height="match_parent"
     tools:ignore="NamespaceTypo">
     <android.support.design.widget.AppBarLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="220dp">
-        <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="60dp" app:layout_marginRight="60dp">
+        <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="60dp" app:layout_marginRight="60dp" app:layout_marginTop="50dp">
             <TextView  app:textStyle="bold" app:textColor="@color/colorWhiteTrans" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Login" />
-            <TextView  app:textColor="@color/colorWhiteTrans" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/spacing_medium" app:text="and you can discover best news around the world " />
+
+            <TextView
+                app:layout_width="wrap_content"
+                app:layout_height="wrap_content"
+                app:layout_marginTop="@dimen/spacing_medium"
+                app:text="and you can discover hospital and clinic services in Iligan City"
+                app:textColor="@color/colorWhiteTrans" />
         </LinearLayout>
     </android.support.design.widget.AppBarLayout>
     <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
